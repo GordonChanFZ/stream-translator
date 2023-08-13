@@ -203,7 +203,7 @@ def cli():
     parser.add_argument('URL', type=str, help='Stream website and channel name, e.g. twitch.tv/forsen')
     parser.add_argument('--model', type=str,
                         choices=['tiny', 'tiny.en', 'small', 'small.en', 'medium', 'medium.en', 'large'],
-                        default='medium',
+                        default='small',
                         help='Model to be used for generating audio transcription. Smaller models are faster and use '
                              'less VRAM, but are also less accurate. .en models are more accurate but only work on '
                              'English audio.')
